@@ -1,0 +1,10 @@
+services:
+  album:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/data
+    environment:
+      MAX_UPLOAD_MB: 4096

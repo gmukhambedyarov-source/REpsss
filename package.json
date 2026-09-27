@@ -1,0 +1,20 @@
+{
+  "name": "family-album",
+  "version": "1.0.0",
+  "description": "Семейный альбом: хранение фото и видео для всей семьи",
+  "main": "server/index.js",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "dependencies": {
+    "exifr": "^7.1.3",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  }
+}
